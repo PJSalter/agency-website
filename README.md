@@ -20,4 +20,5 @@ The potential clients wants to:
 - [ ] 'About us’ section
 - [ ] Contact form 
 - [ ] A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address)
+
 - [ ] Information from the form doesn’t get submitted until the user clicks a button
