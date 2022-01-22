@@ -4,3 +4,109 @@ body{
 h1{
     color:#6b37c1;
 }
+#services{
+    box-sizing: border-box; 
+    /*min-height: 100vh;*/
+    /* max-width: 250px; */
+    padding: 20px;
+    background-color:#bae1ff;
+}
+.flip-container{
+    perspective: 1000px;
+    margin: 3%;
+}
+.front-card-creativity h2 info-title{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.front-card-creativity{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 2em;
+   padding: 10px 10px 0 10px;
+}
+.flip-container:hover .flip-motion{
+    transform: rotateY(180deg);
+}
+.flip-container, .font-card, .back-card-creativity{
+    height: 250px;
+    width: 250px;
+}
+.flip-motion{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front-card, .back-card-creativity{
+      background-color:#370140;
+      color:#bae1ff;
+      backface-visibility:hidden;
+      position:absolute;
+      top: 0; 
+      left: 0; 
+      margin: 15px;
+      width: 200px;
+      height: 200px;
+      border-radius: 5%;
+      box-shadow: 14px 16px 20px 0px #370140e0, 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.front-card{
+    z-index: 2;
+}
+.back-card-creativity{
+    transform:rotateY(180deg);
+   /* padding: 5%; */
+}
+
+h2, h3 {
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+.detailed-info{
+    vertical-align: middle;
+    padding: 1rem;
+    font-size: 8px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .front-card, .back-card-creativity{
+    width: 250px;
+    height: 350px;
+    }
+    #services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #services{
+    min-height: 100vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        
+    }
+    .front-card, .back-card-creativity{
+    margin: 20px;
+    width: 215px;
+    height: 350px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .front-card, .back-card-creativity{
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .front-card, .back-card-creativity{
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    }
+}
