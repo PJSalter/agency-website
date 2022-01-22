@@ -8,10 +8,21 @@ body{
 }
 /* Create and style grid container for the banner */
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-lg {
+    max-width: 40rem;
+}
+.width-xl {
+    max-width: 60rem;
+}
 .grid-container {
-    border: solid black 2px;
+    /* border: solid black 2px; */
     display: grid;
-    grid-template-columns: repeat(5, 10rem);
+    grid-template-columns: repeat(5, 12rem);
     grid-template-rows: repeat(8, 5rem);
     grid-template-areas: 
         "about . . . casestudies"
