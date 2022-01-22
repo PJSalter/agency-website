@@ -13,6 +13,10 @@ body{
     margin-right: auto;
 }
 
+/* .width-sm {
+    max-width: 20rem;
+} */
+
 .width-lg {
     max-width: 40rem;
 }
@@ -22,7 +26,7 @@ body{
 .grid-container {
     border: solid black 2px;
     display: grid;
-    grid-template-columns: repeat(3, 13rem);
+    grid-template-columns: repeat(3, minmax(10rem, 1fr));
     grid-template-rows: repeat(7, 5rem);
     grid-template-areas: 
         "about about ."
@@ -36,28 +40,44 @@ body{
     row-gap: 2rem;
 }
 
+/* need to check where margin bottom on the grid is coming from ! */
+
 #about-grid {
     grid-area: about;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #case-studies-grid {
     grid-area: casestudies;
+    display: flex;
+    align-items: flex-end;
 }
 
 #ved-grid {
     grid-area: ved;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #services-grid {
     grid-area: services;
+    font-size: 3rem;
 }
 
 #contact-grid {
     grid-area: contact;
+    display: flex;
+    justify-content: right;
+    padding-right: 1rem;
 }
 
 .grid-item {
     border: solid black 1px;
+    text-align: center;
+    font-size: 3.5rem;
 }
 
 @media (max-width: 880px) {
