@@ -22,19 +22,19 @@ body{
 .grid-container {
     /* border: solid black 2px; */
     display: grid;
-    grid-template-columns: repeat(5, 12rem);
-    grid-template-rows: repeat(8, 5rem);
+    grid-template-columns: repeat(3, 13rem);
+    grid-template-rows: repeat(7, 5rem);
     grid-template-areas: 
-        "about . casestudies"
-        "about . casestudies"
-        ". ved casestudies"
-        ". ved ."
+        "about about ."
+        "about about casestudies"
+        "services ved casestudies"
+        "services ved casestudies"
         "services ved . "
-        "services . contact"
-        "services . contact"
-        "services . contact"
+        "services contact contact"
+        /* "services contact contact" */
         ;
-    column-gap: 3rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
 #about-grid {
