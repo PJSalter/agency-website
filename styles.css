@@ -25,15 +25,16 @@ body{
     grid-template-columns: repeat(5, 12rem);
     grid-template-rows: repeat(8, 5rem);
     grid-template-areas: 
-        "about . . . casestudies"
-        "about . . . casestudies"
-        ". . ved . casestudies"
-        ". . ved . ."
-        "services . ved . . "
-        "services . . . contact"
-        "services . . . contact"
-        "services . . . contact"
+        "about . casestudies"
+        "about . casestudies"
+        ". ved casestudies"
+        ". ved ."
+        "services ved . "
+        "services . contact"
+        "services . contact"
+        "services . contact"
         ;
+    column-gap: 3rem;
 }
 
 #about-grid {
