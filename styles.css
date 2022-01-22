@@ -1,11 +1,8 @@
 :root {
-    --primarty-color: #6b37c1;
+    --primary-color: #370140;
     --secondary-color: #bae1ff;
 }
 
-body{
-    background-color: #f3f3f3;
-}
 /* Create and style grid container for the banner */
 
 .center {
@@ -23,8 +20,13 @@ body{
 .width-xl {
     max-width: 60rem;
 }
+
+#landing {
+    background-color: var(--primary-color);
+}
+
 .grid-container {
-    border: solid black 2px;
+    /* border: solid black 2px; */
     display: grid;
     grid-template-columns: repeat(3, minmax(10rem, 1fr));
     grid-template-rows: repeat(7, 5rem);
@@ -47,12 +49,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color)
 }
 
 #case-studies-grid {
     grid-area: casestudies;
     display: flex;
     align-items: flex-end;
+    color: var(--secondary-color);
+    border: var(--secondary-color) 20px solid;
 }
 
 #ved-grid {
@@ -60,11 +66,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 #services-grid {
     grid-area: services;
     font-size: 3rem;
+    color: var(--secondary-color);
+    border: var(--secondary-color) solid 20px;
 }
 
 #contact-grid {
@@ -72,6 +82,8 @@ body{
     display: flex;
     justify-content: right;
     padding-right: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .grid-item {
