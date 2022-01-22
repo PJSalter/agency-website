@@ -95,7 +95,7 @@ h2, h3 {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 425gpx) {
     .front-card, .back-card-creativity{
     margin: 15px;
     width: 200px;
