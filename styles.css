@@ -1,6 +1,50 @@
-body{
-    color: #bae1ff;
+:root {
+    --primarty-color: #6b37c1;
+    --secondary-color: #bae1ff;
 }
-h1{
-    color:#6b37c1;
+
+body{
+    background-color: #f3f3f3;
+}
+/* Create and style grid container for the banner */
+
+.grid-container {
+    border: solid black 2px;
+    display: grid;
+    grid-template-columns: repeat(5, 10rem);
+    grid-template-rows: repeat(8, 5rem);
+    grid-template-areas: 
+        "about . . . casestudies"
+        "about . . . casestudies"
+        ". . ved . casestudies"
+        ". . ved . ."
+        "services . ved . . "
+        "services . . . contact"
+        "services . . . contact"
+        "services . . . contact"
+        ;
+}
+
+#about-grid {
+    grid-area: about;
+}
+
+#case-studies-grid {
+    grid-area: casestudies;
+}
+
+#ved-grid {
+    grid-area: ved;
+}
+
+#services-grid {
+    grid-area: services;
+}
+
+#contact-grid {
+    grid-area: contact;
+}
+
+.grid-item {
+    border: solid black 1px;
 }
