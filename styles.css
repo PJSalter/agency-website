@@ -20,7 +20,7 @@ body{
     max-width: 60rem;
 }
 .grid-container {
-    /* border: solid black 2px; */
+    border: solid black 2px;
     display: grid;
     grid-template-columns: repeat(3, 13rem);
     grid-template-rows: repeat(7, 5rem);
@@ -31,7 +31,6 @@ body{
         "services ved casestudies"
         "services ved . "
         "services contact contact"
-        /* "services contact contact" */
         ;
     column-gap: 2rem;
     row-gap: 2rem;
@@ -59,4 +58,19 @@ body{
 
 .grid-item {
     border: solid black 1px;
+}
+
+@media (max-width: 880px) {
+    .grid-container {
+        display: flex;
+        flex-flow: column wrap;
+        max-width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+    }
+
+    .grid-item {
+        max-height: 50rem;
+    }
 }
