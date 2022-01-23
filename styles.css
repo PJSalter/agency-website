@@ -3,6 +3,10 @@
     --secondary-color: #bae1ff;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Create and style grid container for the banner */
 
 .center {
@@ -59,6 +63,8 @@
     align-items: flex-end;
     color: var(--secondary-color);
     border: var(--secondary-color) 20px solid;
+    text-orientation: mixed;
+    writing-mode: sideways-lr;
 }
 
 #ved-grid {
@@ -72,9 +78,13 @@
 
 #services-grid {
     grid-area: services;
-    font-size: 3rem;
     color: var(--secondary-color);
     border: var(--secondary-color) solid 20px;
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact-grid {
@@ -87,9 +97,13 @@
 }
 
 .grid-item {
-    border: solid black 1px;
     text-align: center;
     font-size: 3.5rem;
+}
+.grid-item:hover {
+    transition: transform 100ms ease-in-out;
+    transform: translate(8px, 8px);
+    box-shadow: 7px 7px 6px 2px #640e64;
 }
 
 
@@ -174,14 +188,14 @@ h2, h3 {
     .grid-container {
         display: flex;
         flex-flow: column wrap;
-        max-width: 15rem;
         margin-left: auto;
         margin-right: auto;
         align-content: center;
+        row-gap: 0.3rem;
     }
 
     .grid-item {
-        max-height: 50rem;
+        font-size: 2rem;
     }
 }
 
