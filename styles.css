@@ -3,6 +3,10 @@
     --secondary-color: #bae1ff;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Create and style grid container for the banner */
 
 .center {
