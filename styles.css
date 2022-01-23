@@ -74,7 +74,6 @@
 
 #services-grid {
     grid-area: services;
-    font-size: 3rem;
     color: var(--secondary-color);
     border: var(--secondary-color) solid 20px;
     text-orientation: mixed;
@@ -94,7 +93,6 @@
 }
 
 .grid-item {
-    border: solid black 1px;
     text-align: center;
     font-size: 3.5rem;
 }
@@ -172,14 +170,14 @@ h2, h3 {
     .grid-container {
         display: flex;
         flex-flow: column wrap;
-        max-width: 15rem;
         margin-left: auto;
         margin-right: auto;
         align-content: center;
+        row-gap: 0.3rem;
     }
 
     .grid-item {
-        max-height: 50rem;
+        font-size: 2rem;
     }
 }
 
