@@ -59,6 +59,8 @@
     align-items: flex-end;
     color: var(--secondary-color);
     border: var(--secondary-color) 20px solid;
+    text-orientation: mixed;
+    writing-mode: sideways-lr;
 }
 
 #ved-grid {
@@ -75,6 +77,11 @@
     font-size: 3rem;
     color: var(--secondary-color);
     border: var(--secondary-color) solid 20px;
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact-grid {
