@@ -28,7 +28,6 @@ body {
 }
 
 .img-bg {
-    /* position: absolute; */
     left: 0;
     top: 0;
     background-size: auto;
@@ -37,20 +36,6 @@ body {
     width: 100%;
     height: auto;
 }
-
-/* Need to decide whether we'll add text on the background or not */
-
-/* .position-text {
-    border: 20px solid var(--secondary-color);
-    z-index: 100;
-    position: absolute;
-    color: var(--primary-color);
-    font-size: 90px;
-    font-weight: bold;
-    left: 150px;
-    top: 350px;
-} */
-
 
 /* Navigation menu */
 
@@ -159,6 +144,28 @@ body {
     box-shadow: 7px 7px 6px 2px #640e64;
 }
 
+/* hero section */
+
+.hero-section {
+    background: url('img/background-img.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: end;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.position-text {
+    background-color: var(--primary-color);
+    padding:  1rem 2.5rem;
+    color: var(--secondary-color);
+    border: 25px var(--primary-color) solid;
+    font-size: 3rem;
+}
+
 /* Services Section */
 
 h1{
@@ -249,11 +256,16 @@ h2, h3 {
     }
 
     .grid-item {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
-    .img-bg {
-        overflow: hidden;
+    .hero-section {
+        background-position: -100px center;
+        align-items: flex-end;
+    }
+
+    .position-text {
+        font-size: 2rem;
     }
 }
 
