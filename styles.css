@@ -11,17 +11,48 @@ body {
     margin: 0;
 }
 
-.img-bg {
-
-background-size: auto;
-     /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* .width-sm {
+    max-width: 20rem;
+} */
+
+.width-lg {
+    max-width: 40rem;
+}
+.width-xl {
+    max-width: 60rem;
+}
+
+.img-bg {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    background-size: auto;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+}
+
+/* Need to decide whether we'll add text on the background or not */
+
+/* .position-text {
+    border: 20px solid var(--secondary-color);
+    z-index: 100;
+    position: absolute;
+    color: var(--primary-color);
+    font-size: 90px;
+    font-weight: bold;
+    left: 150px;
+    top: 350px;
+} */
+
+
+/* Navigation menu */
 
 .hamburger {
     position: fixed;
@@ -54,28 +85,7 @@ background-size: auto;
     transform: translateY(0);
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* .width-sm {
-    max-width: 20rem;
-} */
-
-.width-lg {
-    max-width: 40rem;
-}
-.width-xl {
-    max-width: 60rem;
-}
-
-#landing {
-    background-color: var(--primary-color);
-}
-
 .grid-container {
-    /* border: solid black 2px; */
     display: grid;
     grid-template-columns: repeat(3, minmax(10rem, 1fr));
     grid-template-rows: repeat(7, 5rem);
@@ -90,8 +100,6 @@ background-size: auto;
     column-gap: 2rem;
     row-gap: 2rem;
 }
-
-/* need to check where margin bottom on the grid is coming from ! */
 
 #about-grid {
     grid-area: about;
@@ -151,6 +159,7 @@ background-size: auto;
     box-shadow: 7px 7px 6px 2px #640e64;
 }
 
+/* Services Section */
 
 h1{
     color:#6b37c1;
