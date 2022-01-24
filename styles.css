@@ -251,6 +251,10 @@ h2, h3 {
     .grid-item {
         font-size: 2rem;
     }
+
+    .img-bg {
+        overflow: hidden;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
