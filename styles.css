@@ -18,8 +18,11 @@ a {
     border: black solid 1px;
     background: white;
     cursor: pointer;
-  }  
+}  
 
+.closeIcon {
+    display: none;
+}  
   
 .center {
     margin-left: auto;
