@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Ved Agency</title>
 </head>
 
 <body>
 
     <header>
-        <!-- <nav>
+        <nav class="menu">
             <ul>
                 <li>Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a class="menuItem" href="#about">About</a></li>
+                <li><a class="menuItem" href="#services">Services</a></li>
+                <li><a class="menuItem" href="#contact">contact</a></li>
             </ul>
-        </nav> -->
+        </nav>
+        <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+        </button>
     </header>
 
     <section id="landing">
-        <div class="grid-container center width-lg">    
+        <div class="grid-container center width-lg">
             <a href="#about" id="about-grid" class="grid-item">About</a>
-                <a href="#services" id="services-grid" class="grid-item">Services</a>
-                <a href="#" id="ved-grid" class="grid-item">VED</a>
-                <a href="#" id="case-studies-grid" class="grid-item">Case Studies</a>
-                <a href="#contact" id="contact-grid" class="grid-item">Contact</a>
+            <a href="#services" id="services-grid" class="grid-item">Services</a>
+            <a href="#" id="ved-grid" class="grid-item">VED</a>
+            <a href="#" id="case-studies-grid" class="grid-item">Case Studies</a>
+            <a href="#contact" id="contact-grid" class="grid-item">Contact</a>
         </div>
 
     </section>
