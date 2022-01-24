@@ -1,120 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Ved Agency</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>VED.</title>
 </head>
 
 <body>
 
     <header>
-        <!-- <nav>
-            <ul>
-                <li>Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav> -->
+        <nav class="menu">
+            <div class="grid-container center width-lg">
+                <a href="#about" id="about-grid" class="grid-item menuItem">About</a>
+                <a href="#services" id="services-grid" class="grid-item menuItem">Services</a>
+                <a href="#" id="ved-grid" class="grid-item menuItem">VED</a>
+                <a href="#" id="case-studies-grid" class="grid-item menuItem">Case Studies</a>
+                <a href="#contact" id="contact-grid" class="grid-item menuItem">Contact</a>
+            </div>
+        </nav>
+        <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons" style="display: none;">close</i>
+        </button>
     </header>
 
-    <section id="landing">
-        <div class="grid-container center width-lg">    
-            <a href="#about" id="about-grid" class="grid-item">About</a>
-                <a href="#services" id="services-grid" class="grid-item">Services</a>
-                <a href="#" id="ved-grid" class="grid-item">VED</a>
-                <a href="#" id="case-studies-grid" class="grid-item">Case Studies</a>
-                <a href="#contact" id="contact-grid" class="grid-item">Contact</a>
-        </div>
+    <main>
+        <section class="hero-section">
+            <h1 class="position-text">Don't let your business be left behind. <br>
+            Scale up with VED.
+            </h1>
+        </section>
+        <section id="about">
+            <h2>About</h2>
 
-    </section>
-    <section id="about">
-        <h1>About</h1>
+        </section>
 
-    </section>
+        <section id="services">
+            <div class="flip-container">
+                <div class="flip-motion">
+                    <div class="front-card">
 
-    <section id="services">
-        <div class="flip-container">
-            <div class="flip-motion">
-                <div class="front-card">
-
-                    <p class="front-card-creativity">Web Development</p>
-                </div>
-                <div class="back-card-creativity">
-                    <a href="#">
-                        <h2>web development services</h2>
-                    </a>
-                    <h3 class="info-title">HTML, CSS and JavaScript</h3>
-                    <p class="detailed-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged.
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="flip-container">
-            <div class="flip-motion">
-                <div class="front-card">
-                    <p class="front-card-creativity">E-commerce</p>
-                </div>
-                <div class="back-card-creativity">
-                    <a href="#">
-                        <h2>E-commerce services</h2>
-                    </a>
-                    <h3 class="info-title">services we provide for E-commerce</h3>
-                    <p class="detailed-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged.
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
+                        <p class="front-card-creativity">Web Development</p>
+                    </div>
+                    <div class="back-card-creativity">
+                        <a href="#">
+                            <h2>web development services</h2>
+                        </a>
+                        <h3 class="info-title">HTML, CSS and JavaScript</h3>
+                        <p class="detailed-info">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                            not
+                            only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="flip-container">
-            <div class="flip-motion">
-                <div class="front-card">
-                    <p class="front-card-creativity">WordPress Development</p>
-                </div>
-                <div class="back-card-creativity">
-                    <a href="#">
-                        <h2>wordPress Development</h2>
-                    </a>
-                    <h3 class="info-title">services provided for wordPress Development</h3>
-                    <p class="detailed-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged.
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
+            <div class="flip-container">
+                <div class="flip-motion">
+                    <div class="front-card">
+                        <p class="front-card-creativity">E-commerce</p>
+                    </div>
+                    <div class="back-card-creativity">
+                        <a href="#">
+                            <h2>E-commerce services</h2>
+                        </a>
+                        <h3 class="info-title">services we provide for E-commerce</h3>
+                        <p class="detailed-info">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                            not
+                            only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="contact">
-        <form>
-            <input type="search" name="q" placeholder="Search query">
-            <input type="submit" value="Go!">
-        </form>
-    </section>
+            <div class="flip-container">
+                <div class="flip-motion">
+                    <div class="front-card">
+                        <p class="front-card-creativity">WordPress Development</p>
+                    </div>
+                    <div class="back-card-creativity">
+                        <a href="#">
+                            <h2>wordPress Development</h2>
+                        </a>
+                        <h3 class="info-title">services provided for wordPress Development</h3>
+                        <p class="detailed-info">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                            not
+                            only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="contact">
+            <form>
+                <input type="search" name="q" placeholder="Search query">
+                <input type="submit" value="Go!">
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
