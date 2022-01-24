@@ -15,5 +15,14 @@ function toggleMenu() {
       menuIcon.style.display = "none";
     }
   }
+
   // Clicking on the hamburger button will call toggleMenu()
-  hamburger.addEventListener("click", toggleMenu);
+hamburger.addEventListener("click", toggleMenu);
+
+//iterate through each link and add a call to toggleMenu().
+menuItems.forEach( 
+function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+    }
+)
+  
