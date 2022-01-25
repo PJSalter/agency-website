@@ -247,6 +247,37 @@ h1{
     font-size: 8px;
 }
 
+/* Team Section */
+
+.flex-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 190px;
+}
+
+.team-photo {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.center-child {
+    align-self: center;
+    border: solid 20px var(--secondary-color);
+}
+
 @media (max-width: 880px) {
     .grid-container {
         display: flex;
