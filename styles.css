@@ -258,6 +258,8 @@ h1{
 .team-member {
     display: flex;
     flex-direction: column;
+    max-width: 20rem;
+    align-items: center;
 }
 
 .team-members {
@@ -275,7 +277,15 @@ h1{
 
 .center-child {
     align-self: center;
-    border: solid 20px var(--secondary-color);
+    border: solid 10px var(--secondary-color);
+    padding: 1rem 2rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.team-name {
+    border: inherit;
+    font-size: 1.6rem;
 }
 
 @media (max-width: 880px) {
@@ -299,6 +309,10 @@ h1{
 
     .position-text {
         font-size: 2rem;
+    }
+
+    .team-members {
+        gap: 0px;
     }
 }
 
