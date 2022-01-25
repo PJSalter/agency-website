@@ -16,9 +16,9 @@ body {
     margin-right: auto;
 }
 
-/* .width-sm {
+.width-sm {
     max-width: 20rem;
-} */
+} 
 
 .width-lg {
     max-width: 40rem;
@@ -37,7 +37,7 @@ body {
     height: auto;
 }
 
-/* Navigation menu */
+/* -------------------------------------- Navigation menu ---------------------------------------- */
 
 .hamburger {
     position: fixed;
@@ -144,7 +144,7 @@ body {
     box-shadow: 7px 7px 6px 2px #640e64;
 }
 
-/* hero section */
+/* ------------------------------------ hero section -------------------------------------- */
 
 .hero-section {
     background: url('img/background-img.jpg');
@@ -166,17 +166,52 @@ body {
     font-size: 3rem;
 }
 
-/* Services Section */
+/* ------------------------------------ About Page --------------------------------------------- */
+
+#about{
+    background-color: var(--secondary-color);
+    padding: 1rem;
+ }
+
+ .about-container{
+    margin-left: auto;
+    display: grid;
+    justify-content: center;
+}
+
+ .about-title{
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+ }
+
+ .about-text-styling{
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem;
+    color: var(--primary-color);
+ }
+
+ .style-image{
+    width: 100%;
+    height: auto;
+    /* padding: 1.5rem; */
+}
+
+.image-description{
+    text-align:center;
+    color: var(--primary-color);
+}
+
+/* --------------------------------- Services Section --------------------------------------- */
 
 h1{
-    color:#6b37c1;
+    color: var(--primary-color);
 }
 #services{
     box-sizing: border-box; 
-    /*min-height: 100vh;*/
-    /* max-width: 250px; */
-    padding: 20px;
-    background-color:#bae1ff;
+    padding: 1.25rem;
+    background-color: var(--secondary-color);
 }
 .flip-container{
     perspective: 1000px;
@@ -184,9 +219,9 @@ h1{
 }
 .front-card-creativity h2 info-title{
     margin: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif; */
     padding: 1.25rem;
-    background-color:#bae1ff;
+    background-color: var(--secondary-color);
 }
 .flip-container{
     perspective: 62.5rem;
@@ -198,7 +233,7 @@ h1{
 }
 
 .front-card-creativity{
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
    font-size: 2em;
    padding: 0.625rem 0.625rem 0 0.625rem;
 }
@@ -215,8 +250,8 @@ h1{
     position: relative;
 }
 .front-card, .back-card-creativity{
-      background-color:#370140;
-      color:#bae1ff;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
       backface-visibility:hidden;
       position:absolute;
       top: 0; 
@@ -232,7 +267,6 @@ h1{
 }
 .back-card-creativity{
     transform:rotateY(180deg);
-   /* padding: 5%; */
 }
 
 h2, h3 {
@@ -245,7 +279,69 @@ h2, h3 {
     font-size: 8px;
 }
 
-@media (max-width: 880px) {
+/* ------------------------------------------ Media Queries --------------------------------------------- */
+
+@media only screen and (max-width: 1440px) {
+    .about-container{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    }
+    .about-title{
+    font-size: 7rem;
+    }
+    .about-text-styling{
+    text-align: right;
+    font-size: 1.4rem;
+    }
+    .image-description{
+    font-size: 1.6rem;
+    }
+    #services{
+    display: grid;
+    grid-template-columns: 60ch 60ch 50ch;
+    padding: 8rem;
+    height: 40.5rem;
+    }
+    .front-card, .back-card-creativity{
+    width: 15.625rem;
+    height: 21.875rem;
+    text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    #services{
+        grid-template-columns: 43ch 40ch 10ch;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .about-title{
+    font-size: 6rem;
+    }
+    .about-container{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    }
+    .about-text-styling{
+    text-align: right;
+    font-size: 1.1rem;
+    }
+    .front-card, .back-card-creativity{
+    width: 15.625rem;
+    height: 21.875rem;
+    }
+    #services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 2fr));
+    padding: 3rem;
+    height: 30.9rem;
+    }
+ }
+
+ @media (max-width: 880px) {
     .grid-container {
         display: flex;
         flex-flow: column wrap;
@@ -269,27 +365,37 @@ h2, h3 {
     }
 }
 
-@media only screen and (max-width: 1080px) {
-    .front-card, .back-card-creativity{
-    width: 15.625rem;
-    height: 21.875rem;
-    }
+@media only screen and (max-width: 851px) {
     #services{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 2fr));
+    padding: 0.7rem;
+    }
+    .front-card, .back-card-creativity{
+    width: 13.625rem
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #services{
-    min-height: 100vh;
+    .about-title{
+    font-size: 4rem;
+    }
+    .about-container{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+   }
+   .about-text-styling{
+    text-align: right;
+    font-size: 1rem;
+    margin-right: 3rem;
+   }
+   #services{
     padding: 0.625rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12.5rem, 2fr));
     }
     .front-card, .back-card-creativity{
     margin: 1.25rem;
-    width: 13.438rem;
+    width: 12.438rem;
     height: 21.875rem;
     }
     .detailed-info{
@@ -298,8 +404,26 @@ h2, h3 {
 }
 
 @media only screen and (max-width: 425px) {
+    .about-container{
+    margin-left: auto;
+    display: grid;
+    justify-content: center;
+    }
+    .about-title{
+    font-size: 3rem;
+    }
+    .about-text-styling{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-right: auto;
+    }
+    .image-description{
+    font-size: 2rem;
+    padding: 1rem;
+    }
     #services{
-        padding: 5rem;
+    padding: 6rem;
+    height: 60rem;
     }
     .front-card, .back-card-creativity{
     margin: 0.938rem;
@@ -307,20 +431,36 @@ h2, h3 {
     height: 12.5rem;
     }
     .detailed-info{
-        font-size: 0.4rem;
+    font-size: 0.4rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .about-container{
+    margin-left: auto;
+    display: grid;
+    justify-content: center;
+    }
+    .about-text-styling{
+    font-size: 1rem;
+    text-align: center;
+    padding: 3rem;
+    margin-right: 0;
+    }
+    .image-description{
+    font-size: 1rem;
+    padding: 0.2rem;
+    }
+    #services{
+    padding: 2.8rem;
+    }
+    .front-card, .back-card-creativity{
+    margin: 0.938rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    }
+    .detailed-info{
+    font-size: 0.4rem;
     }
 }
 
-@media only screen and (max-width: 320px) {
-    #services{
-        padding: 2rem;
-    }
-    .front-card, .back-card-creativity{
-        margin: 0.938rem;
-        width: 12.5rem;
-        height: 12.5rem;
-    }
-    .detailed-info{
-        font-size: 0.4rem;
-    }
-}
+
