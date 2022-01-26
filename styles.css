@@ -16,9 +16,17 @@ body {
     margin: 0;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .width-sm {
@@ -173,12 +181,22 @@ body {
 
 /* ------------------------------------ About Page --------------------------------------------- */
 
-#about{
+.about-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.about-container > div {
+    max-width: 20rem;
+}
+
+/* #about{
     background-color: var(--secondary-color);
     padding: 1rem;
- }
+ } */
 
- .about-container{
+ /* .about-container{
     margin-left: auto;
     display: grid;
     justify-content: center;
@@ -197,16 +215,18 @@ body {
     color: var(--primary-color);
  }
 
+ */
  .style-image{
     width: 100%;
     height: auto;
     /* padding: 1.5rem; */
-}
+ }
 
-.image-description{
+
+/* .image-description{
     text-align:center;
     color: var(--primary-color);
-}
+}  */
 
 /* --------------------------------- Services Section --------------------------------------- */
 
@@ -370,21 +390,18 @@ h1{
 /* ------------------------------------------ Media Queries --------------------------------------------- */
 
 @media only screen and (max-width: 1440px) {
-    .about-container{
+    /* .about-container{
     margin-left: auto;
     display: flex;
     justify-content: space-between;
     }
-    .about-title{
-    font-size: 7rem;
-    }
     .about-text-styling{
     text-align: right;
     font-size: 1.4rem;
-    }
-    .image-description{
+    } */
+    /* .image-description{
     font-size: 1.6rem;
-    }
+    } */
     #services{
     display: grid;
     grid-template-columns: 60ch 60ch 50ch;
@@ -405,10 +422,10 @@ h1{
 }
 
 @media only screen and (max-width: 1080px) {
-    .about-title{
+    /* .about-title{
     font-size: 6rem;
-    }
-    .about-container{
+    } */
+    /* .about-container{
     margin-left: auto;
     display: flex;
     justify-content: space-between;
@@ -416,7 +433,7 @@ h1{
     .about-text-styling{
     text-align: right;
     font-size: 1.1rem;
-    }
+    } */
     .front-card, .back-card-creativity{
     width: 15.625rem;
     height: 21.875rem;
@@ -467,10 +484,10 @@ h1{
 }
 
 @media only screen and (max-width: 768px) {
-    .about-title{
+    /* .about-title{
     font-size: 4rem;
-    }
-    .about-container{
+    } */
+    /* .about-container{
     margin-left: auto;
     display: flex;
     justify-content: space-between;
@@ -479,7 +496,7 @@ h1{
     text-align: right;
     font-size: 1rem;
     margin-right: 3rem;
-   }
+   } */
    #services{
     padding: 0.625rem;
     display: grid;
@@ -496,23 +513,23 @@ h1{
 }
 
 @media only screen and (max-width: 425px) {
-    .about-container{
+    /* .about-container{
     margin-left: auto;
     display: grid;
     justify-content: center;
-    }
-    .about-title{
+    } */
+    /* .about-title{
     font-size: 3rem;
-    }
-    .about-text-styling{
+    } */
+    /* .about-text-styling{
     font-size: 1.2rem;
     text-align: center;
     margin-right: auto;
-    }
-    .image-description{
+    } */
+    /* .image-description{
     font-size: 2rem;
     padding: 1rem;
-    }
+    } */
     #services{
     padding: 6rem;
     height: 60rem;
@@ -527,7 +544,7 @@ h1{
     }
 }
 @media only screen and (max-width: 320px) {
-    .about-container{
+    /* .about-container{
     margin-left: auto;
     display: grid;
     justify-content: center;
@@ -537,11 +554,11 @@ h1{
     text-align: center;
     padding: 3rem;
     margin-right: 0;
-    }
-    .image-description{
+    } */
+    /* .image-description{
     font-size: 1rem;
     padding: 0.2rem;
-    }
+    } */
     #services{
     padding: 2.8rem;
     }
