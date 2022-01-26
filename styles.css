@@ -193,6 +193,7 @@ h2 {
     flex-flow: row wrap;
     justify-content: center;
     gap: 20px;
+    padding: 0rem 2.7rem;
 }
 
 .about-container > div {
