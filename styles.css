@@ -263,7 +263,8 @@ h2 {
 
 .front-card-creativity{
    font-size: 2em;
-   padding: 0.625rem 0.625rem 0 0.625rem;
+   padding: 0.8rem 0.5rem;
+   text-align: center;
 }
 .flip-container:hover .flip-motion{
     transform: rotateY(180deg);
