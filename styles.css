@@ -338,9 +338,9 @@ h2 {
     resize: none;
   }
 
-  .contact-h2 {
-      padding-left: 2rem;
-  }
+#contact {
+    padding-left: 0.6rem;
+}
 
   .submit-btn {
         font-family: inherit;
@@ -358,7 +358,7 @@ h2 {
  }
 
 
-/* Team Section */
+/* ------------------------------------------ Team Section --------------------------------------------- */
 
 .flex-container {
     display: flex;
