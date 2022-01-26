@@ -297,6 +297,29 @@ h1{
     font-family: inherit;
   }
 
+  textarea {
+    resize: none;
+  }
+
+  .contact-h2 {
+      padding-left: 2rem;
+  }
+
+  .submit-btn {
+        font-family: inherit;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 0.12em;
+        color: var(--primary-color);
+        text-align: center;
+        border: 10px solid var(--secondary-color);
+        background-color: inherit;
+        margin-top: 1rem;
+  }
+    .submit-btn:hover {
+        border: 10px solid var(--primary-color);
+ }
+
 
 /* Team Section */
 
