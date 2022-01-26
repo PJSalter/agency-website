@@ -242,8 +242,8 @@ h2 {
     flex-flow: row wrap;
     justify-content: center;
     gap: 80px;
-    --flip-card-width: 13rem;
-    --flip-card-height: 20rem;
+    --flip-card-width: 15rem;
+    --flip-card-height: 23rem;
 }
 
 .flip-container{
@@ -298,14 +298,13 @@ h2 {
 }
 
 .style-cards {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     vertical-align: middle;
 }
 
 .detailed-info{
     vertical-align: middle;
     padding: 1rem;
-    font-size: 8px;
 }
 
 /* ------------------------------------------ Contact Form --------------------------------------------- */
