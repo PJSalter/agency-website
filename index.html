@@ -164,7 +164,8 @@
         </section>
 
         <section id="contact">
-            <h2 class="center">Get in touch with us</h2>
+            <div class="style-form">
+            <h2 class="contact-h2">Get in touch with us</h2>
             <form id="form" action="/submit" method="GET" class="form-control width-sm">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Richard Hendricks" required>
@@ -181,8 +182,9 @@
                 <label for="message">Message</label>                
                 <textarea name="message"></textarea>
 
-                <button type="submit">Submit</button>
+                <button type="submit" class="submit-btn">Submit</button>
             </form>
+        </div>
         </section>
     </main>
     <script src="app.js"></script>

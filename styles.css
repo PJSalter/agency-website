@@ -4,6 +4,10 @@
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
+:focus {
+    outline: 3px solid red;   
+}
+
 a {
     text-decoration: none;
 }
