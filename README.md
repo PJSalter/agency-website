@@ -10,14 +10,14 @@ The potential clients wants to:
 - [x] See information about each member of the team 
 - [x] Browse the website on mobile, tablet, and desktop devices
 - [x] Click to navigate to different sections of the webpage
-- [ ] Contact the agency to enquire about working with them
+- [x] Contact the agency to enquire about working with them
 - [x] Visit the website at a publicly accessible domain name
-- [ ] Navigate the website using keyboard controls
-- [ ] Hear the screen reader describe the content on the website
+- [x] Navigate the website using keyboard controls
+- [x] Hear the screen reader describe the content on the website
 
 ## Acceptance Criteria
 - [x] Navigation menu
 - [x] 'About us’ section
-- [ ] Contact form 
-- [ ] A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address)
+- [x] Contact form 
+- [x] A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address)
 - [ ] Information from the form doesn’t get submitted until the user clicks a button
