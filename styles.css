@@ -231,21 +231,24 @@ h2 {
 
 /* --------------------------------- Services Section --------------------------------------- */
 
-h1{
-    color: var(--primary-color);
-}
 #services{
     box-sizing: border-box; 
     padding: 1.25rem;
     background-color: var(--secondary-color);
 }
+
+.services-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 .flip-container{
     perspective: 1000px;
     margin: 3%;
 }
 .front-card-creativity h2 info-title{
     margin: 0%;
-    /*font-family: Arial, Helvetica, sans-serif; */
     padding: 1.25rem;
     background-color: var(--secondary-color);
 }
@@ -259,7 +262,6 @@ h1{
 }
 
 .front-card-creativity{
-   /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
    font-size: 2em;
    padding: 0.625rem 0.625rem 0 0.625rem;
 }
@@ -390,8 +392,8 @@ h1{
 
 /* ------------------------------------------ Media Queries --------------------------------------------- */
 
-@media only screen and (max-width: 1440px) {
-    /* .about-container{
+/* @media only screen and (max-width: 1440px) {
+    .about-container{
     margin-left: auto;
     display: flex;
     justify-content: space-between;
@@ -399,10 +401,10 @@ h1{
     .about-text-styling{
     text-align: right;
     font-size: 1.4rem;
-    } */
-    /* .image-description{
+    } 
+    .image-description{
     font-size: 1.6rem;
-    } */
+    } 
     #services{
     display: grid;
     grid-template-columns: 60ch 60ch 50ch;
@@ -413,20 +415,20 @@ h1{
     width: 15.625rem;
     height: 21.875rem;
     text-align: center;
-    }
-}
+    } 
+} */
 
-@media only screen and (max-width: 1290px) {
+/* @media only screen and (max-width: 1290px) {
     #services{
         grid-template-columns: 43ch 40ch 10ch;
     }
-}
+} */
 
-@media only screen and (max-width: 1080px) {
-    /* .about-title{
+/* @media only screen and (max-width: 1080px) {
+    .about-title{
     font-size: 6rem;
-    } */
-    /* .about-container{
+    } 
+     .about-container{
     margin-left: auto;
     display: flex;
     justify-content: space-between;
@@ -434,7 +436,7 @@ h1{
     .about-text-styling{
     text-align: right;
     font-size: 1.1rem;
-    } */
+    } 
     .front-card, .back-card-creativity{
     width: 15.625rem;
     height: 21.875rem;
@@ -444,8 +446,8 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(12.5rem, 2fr));
     padding: 3rem;
     height: 30.9rem;
-    }
- }
+    } 
+ } */
 
  @media (max-width: 880px) {
     .grid-container {
@@ -475,20 +477,20 @@ h1{
     }
 }
 
-@media only screen and (max-width: 851px) {
+/* @media only screen and (max-width: 851px) {
     #services{
     padding: 0.7rem;
     }
     .front-card, .back-card-creativity{
     width: 13.625rem
     }
-}
+} */
 
-@media only screen and (max-width: 768px) {
-    /* .about-title{
+/* @media only screen and (max-width: 768px) {
+    .about-title{
     font-size: 4rem;
-    } */
-    /* .about-container{
+    }
+    .about-container{
     margin-left: auto;
     display: flex;
     justify-content: space-between;
@@ -497,7 +499,7 @@ h1{
     text-align: right;
     font-size: 1rem;
     margin-right: 3rem;
-   } */
+   } 
    #services{
     padding: 0.625rem;
     display: grid;
@@ -511,26 +513,26 @@ h1{
     .detailed-info{
         font-size: 0.7rem;
     }
-}
+} */
 
-@media only screen and (max-width: 425px) {
-    /* .about-container{
+/* @media only screen and (max-width: 425px) {
+    .about-container{
     margin-left: auto;
     display: grid;
     justify-content: center;
-    } */
-    /* .about-title{
+    }
+    .about-title{
     font-size: 3rem;
-    } */
-    /* .about-text-styling{
+    } 
+    .about-text-styling{
     font-size: 1.2rem;
     text-align: center;
     margin-right: auto;
-    } */
-    /* .image-description{
+    } 
+   .image-description{
     font-size: 2rem;
     padding: 1rem;
-    } */
+    } 
     #services{
     padding: 6rem;
     height: 60rem;
@@ -543,9 +545,9 @@ h1{
     .detailed-info{
     font-size: 0.4rem;
     }
-}
-@media only screen and (max-width: 320px) {
-    /* .about-container{
+} */
+/* @media only screen and (max-width: 320px) {
+    .about-container{
     margin-left: auto;
     display: grid;
     justify-content: center;
@@ -555,11 +557,11 @@ h1{
     text-align: center;
     padding: 3rem;
     margin-right: 0;
-    } */
-    /* .image-description{
+    }
+    .image-description{
     font-size: 1rem;
     padding: 0.2rem;
-    } */
+    } 
     #services{
     padding: 2.8rem;
     }
@@ -571,6 +573,6 @@ h1{
     .detailed-info{
     font-size: 0.4rem;
     }
-}
+} */
 
 
