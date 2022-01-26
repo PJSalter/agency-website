@@ -518,7 +518,16 @@ h1{
     user-select: none;
     cursor: default;
     height: 100vh;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.testim-headline{
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 40rem;
 }
 
 .recommendation-container{
@@ -532,15 +541,17 @@ h1{
 }
 
 .logos {
-    padding-top: 3rem;
+    padding-top: 2rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    object-fit: scale-down;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem;
   }
   
   .company-image {
-    max-width: 100px;
+    max-height: 4rem;
   }
 
 .testim{
@@ -560,7 +571,7 @@ h1{
 .testim .arrow{
     display: block;
     position: absolute; 
-    color:blueviolet;
+    color: var(--primary-color);
     cursor: pointer;
     font-size: 2em;
     top: 50%;
@@ -579,7 +590,7 @@ h1{
     right: 10px;
 }
 .testim .arrow:hover{
-    color: var(--secondary-color);
+    color: deeppink;
 }
 .testim .dots{
     text-align: center;
@@ -599,7 +610,7 @@ h1{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--primary-color);
     margin: 0 10px;
     cursor: pointer;
     transition: all .5s ease-in-out;
@@ -645,7 +656,7 @@ h1{
 }
 .testim .cont div p{
     font-size: 1.15em;
-    color:deepskyblue;
+    color: var(--primary-color);
     width: 80%;
     margin: auto;
 }
@@ -723,21 +734,36 @@ h1{
         transform: scale(0);
     }
 }
-
+@media all and (max-width: 768px) {
+    #testimonial{
+        height: 55rem;
+    }
+    .logos{
+        margin: 3rem;
+    }
+}
+@media all and (max-width: 500px) {
+    #testimonial{
+        height: 75rem;
+    }
+    .testim .arrow{
+        font-size: 1.5rem;
+    }
+    .testim .cont div p{
+        line-height: 25px;
+    }
+}
+@media all and (max-width: 320px) {
+    .testim .cont div p{
+        font-size: 0.875rem;
+    }
+}
 @media all and (max-width: 300px) {
     .recommendation-container{
         font-size: 14px;
     }
     .testim .cont div p{
         font-size: 0.80rem;
-    }
-}
-@media all and (max-width: 500px) {
-    .testim .arrow{
-        font-size: 1.5rem;
-    }
-    .testim .cont div p{
-        line-height: 25px;
     }
 }
 
