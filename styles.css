@@ -1,6 +1,7 @@
 :root {
     --primary-color: #370140;
     --secondary-color: #bae1ff;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 a {
@@ -269,15 +270,58 @@ h1{
     transform:rotateY(180deg);
 }
 
-h2, h3 {
-  font-size: 0.8rem;
-  vertical-align: middle;
+.style-cards {
+    font-size: 0.8rem;
+    vertical-align: middle;
 }
+
 .detailed-info{
     vertical-align: middle;
     padding: 1rem;
     font-size: 8px;
 }
+
+/* Team Section */
+
+.flex-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    align-items: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 190px;
+}
+
+.team-photo {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.center-child {
+    align-self: center;
+    border: solid 10px var(--secondary-color);
+    padding: 1rem 2rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.team-name {
+    border: inherit;
+    font-size: 1.6rem;
+}
+
 
 /* ------------------------------------------ Media Queries --------------------------------------------- */
 
@@ -362,6 +406,10 @@ h2, h3 {
 
     .position-text {
         font-size: 2rem;
+    }
+
+    .team-members {
+        gap: 0px;
     }
 }
 
