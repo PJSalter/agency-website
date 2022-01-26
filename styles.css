@@ -499,6 +499,10 @@ h2 {
         display: inherit;
         padding: unset;
     }
+
+    .flip-container:hover .flip-motion{
+        transform: unset;
+    }
 }
 
 /* @media only screen and (max-width: 851px) {
