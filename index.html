@@ -20,14 +20,14 @@
     <header>
         <nav class="menu">
             <div class="grid-container center width-lg">
-                <a href="#about" id="about-grid" class="grid-item menuItem">About</a>
-                <a href="#services" id="services-grid" class="grid-item menuItem">Services</a>
-                <a href="#team" id="ved-grid" class="grid-item menuItem">Team</a>
-                <a href="" id="case-studies-grid" class="grid-item menuItem"></a>
-                <a href="#contact" id="contact-grid" class="grid-item menuItem">Contact</a>
+                <a href="#about" id="about-grid" class="grid-item menuItem" tabindex="1">About</a>
+                <a href="#testimonials" id="services-grid" class="grid-item menuItem" tabindex="4">Testimonials</a>
+                <a href="#team" id="ved-grid" class="grid-item menuItem" tabindex="3">Team</a>
+                <a href="#services" id="case-studies-grid" class="grid-item menuItem" tabindex="2">Services</a>
+                <a href="#contact" id="contact-grid" class="grid-item menuItem" tabindex="5">Contact</a>
             </div>
         </nav>
-        <button class="hamburger">
+        <button class="hamburger" tabindex="0">
             <i class="menuIcon material-icons">menu</i>
             <i class="closeIcon material-icons" style="display: none;">close</i>
         </button>
@@ -41,107 +41,91 @@
         </section>
 
         <section id="about">
-            <h2 class="about-title center">About Us</h2>
+            <h2 class="text-center">About Us</h2>
             <div class="about-container">
-            <figure>
-                <embed class="style-image" src="img/building-blocks.svg" alt="development work">
-                <figcaption class="image-description">Bringing inovative tech services in excellent fashion</figcaption>
-            </figure>
-    
-            <p class="about-text-styling center width-sm">co-founded in 2018 and situated within greater London. 
-                VED has brocken all barriers by keeping up to date with it's services, providing the best and most 
-                prominent industry leading technology that is developed by our high skilled software developers.<br><br>
-                Several Businesses from all over the global have reached out to us because of word of mouth from our
-                spectacular services. We have worked with huge companies such as Adobe and even Sony to name some of
-                the larger companies. <br><br>
-                Excitingly we are expanding our team to bring the best and the brightest and to ensure that quick services
-                and proficiency is in order, we care about our customers to the point that they will get amazing designs faster. <br><br>
-                Now currently celebrating our 4th year since opening are doors, we have consitently won many awards for best 
-                practices from a web development agency, and many more nominations for fast and effective outcomes. <br><br>
-                We deliver the impossible and throw out many smiles.
-                </p>
+                <div class="about-photo">
+                    <figure>
+                        <embed class="style-image" src="img/building-blocks.svg" alt="development work">
+                    </figure>
+                </div>
+                <div class="about-description">
+                    <p>Founded in 2018 and situated within greater London, VED brings innovative tech services in
+                        excellent fashion.
+                    </p>
+                    <p>
+                        We have broken all barriers by providing the best and most prominent, industry-leading
+                        technology developed by our highly-skilled software developers.
+                    </p>
+                    <p>
+                        Several businesses from all over the globe have reached out to us because of word of mouth from
+                        our spectacular services. We have worked with huge companies such as Adobe and even Sony to name
+                        a few.
+                    </p>
+                    <p>
+                        Excitingly, we are expanding our team to bring the best and the brightest and to ensure that
+                        quick services and proficiency is in order. We care about our customers to the point that they
+                        will get amazing designs faster.
+                    </p>
+                    <p>
+                        Currently celebrating our 4th year since opening our doors, we have consistently won many awards
+                        for best
+                        practices from a web development agency and many more nominations for fast and effective
+                        outcomes.
+                    </p>
+                    We deliver the impossible and throw out many smiles.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section id="services">
-            <div class="flip-container">
-                <div class="flip-motion">
-                    <div class="front-card">
+            <h2 class="text-center">Our Services</h2>
+            <div class="services-container">
+                <div class="flip-container">
+                    <div class="flip-motion">
+                        <div class="front-card">
 
-                        <p class="front-card-creativity">Web Development</p>
-                    </div>
-                    <div class="back-card-creativity">
-                        <a href="#">
-                            <h2 class="style-cards">web development services</h2>
-                        </a>
-                        <h3 class="info-title style-cards">HTML, CSS and JavaScript</h3>
-                        <p class="detailed-info">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not
-                            only five centuries, but also the leap into electronic typesetting, remaining essentially
-                            unchanged.
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions
-                            of
-                            Lorem Ipsum.</p>
+                            <h3 class="front-card-creativity">Web Development</h3>
+                        </div>
+                        <div class="back-card-creativity">
+                            <!-- h3 that will appear only on mobile  -->
+                            <h3 class="front-card-creativity hide">Web Development</h3>
+                            <p class="detailed-info style-cards">Beautiful websites also need to perform optimally – for
+                                both users and search engines.
+
+                                Our award-winning development team in London brings our eye-catching designs to life,
+                                with the functionality that your users need.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="flip-container">
-                <div class="flip-motion">
-                    <div class="front-card">
-                        <p class="front-card-creativity">E-commerce</p>
-                    </div>
-                    <div class="back-card-creativity">
-                        <a href="#">
-                            <h2 class="style-cards">E-commerce services</h2>
-                        </a>
-                        <h3 class="info-title">services we provide for E-commerce</h3>
-                        <p class="detailed-info">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not
-                            only five centuries, but also the leap into electronic typesetting, remaining essentially
-                            unchanged.
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions
-                            of
-                            Lorem Ipsum.</p>
+                <div class="flip-container">
+                    <div class="flip-motion">
+                        <div class="front-card">
+                            <h3 class="front-card-creativity">Ecommerce Applications</h3>
+                        </div>
+                        <div class="back-card-creativity">
+                            <!-- h3 that will appear only on mobile -->
+                            <h3 class="front-card-creativity hide">Ecommerce</h3>
+                            <p class="detailed-info style-cards">As more and more consumers transfer their shopping
+                                habits to the digital realm, we continue to put our efforts into developing attractive
+                                and engaging ecommerce sites that drive conversions.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="flip-container">
-                <div class="flip-motion">
-                    <div class="front-card">
-                        <p class="front-card-creativity">WordPress Development</p>
-                    </div>
-                    <div class="back-card-creativity">
-                        <a href="#">
-                            <h2 class="style-cards">wordPress Development</h2>
-                        </a>
-                        <h3 class="info-title style-cards">services provided for wordPress Development</h3>
-                        <p class="detailed-info">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not
-                            only five centuries, but also the leap into electronic typesetting, remaining essentially
-                            unchanged.
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions
-                            of
-                            Lorem Ipsum.</p>
+                <div class="flip-container">
+                    <div class="flip-motion">
+                        <div class="front-card">
+                            <h3 class="front-card-creativity">SEO Optimisation</p>
+                        </div>
+                        <div class="back-card-creativity">
+                            <!-- h3 that will appear only on mobile -->
+                            <h3 class="front-card-creativity hide">SEO</h3>
+                            <p class="detailed-info style-cards">No matter how trendy your website is, if search engines
+                                don’t see it, neither will potential customers. We analyse your website, industry and
+                                goals to create the best solutions.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,39 +199,43 @@
                 <div class="team-member">
                     <h3 class="center-child team-name">Sonia</h3>
                     <img src="img/placeholder-img1.jpg" alt="a photo of Sonia" class="team-photo">
-                    <p class="center-child">Sonia is the Head of Front End Development at VED with broad industry experience. She designs systems characterised by high levels of risk and technical complexity. She coordinates all aspects of the integration and is proficient in HTML, C#, JavaScript and SQL, with a thorough understanding of web design and SEO optimisation.</p>
+                    <p class="center-child">Sonia is the Head of Front End Development at VED with broad industry
+                        experience. She designs systems characterised by high levels of risk and technical complexity.
+                        She coordinates all aspects of the integration and is proficient in HTML, C#, JavaScript and
+                        SQL, with a thorough understanding of web design and SEO optimisation.</p>
                 </div>
 
                 <div class="team-member">
                     <h3 class="center-child team-name">Peter</h3>
                     <img src="img/Peter.png" alt="a photo of Peter" class="team-photo">
-                    <p class="center-child">With 8 years of experience under his belt, Peter is a highly-capable Full Stack Developer, who manages the development and design of VED's software projects. He engages at all points in the development cycle to ensure that features are built using sound engineering principles. He works with Azure Devops, AWS, Azure, C#, php, SQL Server and MySQL.</p>
+                    <p class="center-child">With 8 years of experience under his belt, Peter is a highly-capable Full
+                        Stack Developer, who manages the development and design of VED's software projects. He engages
+                        at all points in the development cycle to ensure that features are built using sound engineering
+                        principles. He works with Azure Devops, AWS, Azure, C#, php, SQL Server and MySQL.</p>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <div class="style-form">
-            <h2 class="contact-h2">Get in touch with us</h2>
-            <form id="form" action="/submit" method="GET" class="form-control width-sm">
+            <h2 class="text-center">Get in touch with us</h2>
+            <form id="form" action="/submit" method="GET" class="form-control center width-sm">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Richard Hendricks" required>
-                
+
                 <label for="company">Company Name</label>
                 <input type="text" id="company" name="company" placeholder="Pied Piper" required>
-               
+
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="rhendricks@piedpiper.com" required>
-                
+
                 <label for="tel">Telephone</label>
                 <input id="tel" name="tel" type="tel">
-                
-                <label for="message">Message</label>                
+
+                <label for="message">Message</label>
                 <textarea name="message"></textarea>
 
                 <button type="submit" class="submit-btn">Submit</button>
             </form>
-        </div>
         </section>
     </main>
     <script src="app.js"></script>

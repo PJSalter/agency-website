@@ -2,12 +2,20 @@
     --primary-color: #370140;
     --secondary-color: #bae1ff;
     font-family: 'Quattrocento Sans', sans-serif;
+    background-color: #f3f3f3;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 :focus {
     outline: 3px dotted black;   
 }
 
+.hide {
+    display: none;
+}
 a {
     text-decoration: none;
 }
@@ -16,9 +24,17 @@ body {
     margin: 0;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .width-sm {
@@ -103,7 +119,7 @@ body {
 #case-studies-grid {
     grid-area: casestudies;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
     color: var(--secondary-color);
     border: var(--secondary-color) 20px solid;
     text-orientation: mixed;
@@ -143,6 +159,10 @@ body {
     text-align: center;
     font-size: 3.5rem;
 }
+.grid-item:focus {
+    outline: 3px dotted var(--secondary-color);
+}
+
 .grid-item:hover {
     transition: transform 100ms ease-in-out;
     transform: translate(8px, 8px);
@@ -173,12 +193,24 @@ body {
 
 /* ------------------------------------ About Page --------------------------------------------- */
 
-#about{
+.about-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0rem 2.7rem;
+}
+
+.about-container > div {
+    max-width: 25rem;
+}
+
+/* #about{
     background-color: var(--secondary-color);
     padding: 1rem;
- }
+ } */
 
- .about-container{
+ /* .about-container{
     margin-left: auto;
     display: grid;
     justify-content: center;
@@ -197,57 +229,62 @@ body {
     color: var(--primary-color);
  }
 
+ */
  .style-image{
     width: 100%;
     height: auto;
     /* padding: 1.5rem; */
-}
+ }
 
-.image-description{
+
+/* .image-description{
     text-align:center;
     color: var(--primary-color);
-}
+}  */
 
 /* --------------------------------- Services Section --------------------------------------- */
 
-h1{
-    color: var(--primary-color);
-}
 #services{
     box-sizing: border-box; 
     padding: 1.25rem;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
 }
+
+.services-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 100px;
+    --flip-card-width: 15rem;
+    --flip-card-height: 23rem;
+}
+
 .flip-container{
     perspective: 1000px;
-    margin: 3%;
+    perspective: 62.5rem;
 }
 .front-card-creativity h2 info-title{
     margin: 0%;
-    /*font-family: Arial, Helvetica, sans-serif; */
     padding: 1.25rem;
     background-color: var(--secondary-color);
 }
-.flip-container{
-    perspective: 62.5rem;
-    margin: 0.03rem;
-}
+
 .front-card-creativity h2 info-title{
     margin: 0rem;
     text-align: center;
 }
 
 .front-card-creativity{
-   /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
    font-size: 2em;
-   padding: 0.625rem 0.625rem 0 0.625rem;
+   padding: 0.8rem 0.5rem;
+   text-align: center;
 }
 .flip-container:hover .flip-motion{
     transform: rotateY(180deg);
 }
 .flip-container, .font-card, .back-card-creativity{
-    height: 15.625rem;
-    width: 15.625rem;
+    height: var(--flip-card-height);
+    width: var(--flip-card-width);
 }
 .flip-motion{
     transition: 0.6s;
@@ -255,34 +292,35 @@ h1{
     position: relative;
 }
 .front-card, .back-card-creativity{
-      background-color: var(--primary-color);
+    background-color: var(--primary-color);
       color: var(--secondary-color);
       backface-visibility:hidden;
       position:absolute;
       top: 0; 
       left: 0;
-      margin: 0.938rem;
-      width: 12.5rem;
-      height: 12.5rem;
+      height: var(--flip-card-height);
+      width: var(--flip-card-width);
       border-radius: 5%;
-      box-shadow: 0.875rem 1rem 1.25rem 0rem #370140e0, 0 0.375rem 1.25rem 0 rgb(0 0 0 / 19%);
+      border: var(--secondary-color) solid 16px;
 }
+
 .front-card{
-    z-index: 2;
+    z-index: -2;
+    display: flex;
+    align-items: center;
 }
 .back-card-creativity{
     transform:rotateY(180deg);
 }
 
 .style-cards {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     vertical-align: middle;
 }
 
 .detailed-info{
     vertical-align: middle;
     padding: 1rem;
-    font-size: 8px;
 }
 
 /* ------------------------------------------ Contact Form --------------------------------------------- */
@@ -305,9 +343,9 @@ h1{
     resize: none;
   }
 
-  .contact-h2 {
-      padding-left: 2rem;
-  }
+#contact {
+    padding-left: 0.6rem;
+}
 
   .submit-btn {
         font-family: inherit;
@@ -325,7 +363,7 @@ h1{
  }
 
 
-/* Team Section */
+/* ------------------------------------------ Team Section --------------------------------------------- */
 
 .flex-container {
     display: flex;
@@ -369,22 +407,19 @@ h1{
 
 /* ------------------------------------------ Media Queries --------------------------------------------- */
 
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) {
     .about-container{
     margin-left: auto;
     display: flex;
     justify-content: space-between;
     }
-    .about-title{
-    font-size: 7rem;
-    }
     .about-text-styling{
     text-align: right;
     font-size: 1.4rem;
-    }
+    } 
     .image-description{
     font-size: 1.6rem;
-    }
+    } 
     #services{
     display: grid;
     grid-template-columns: 60ch 60ch 50ch;
@@ -395,20 +430,20 @@ h1{
     width: 15.625rem;
     height: 21.875rem;
     text-align: center;
-    }
-}
+    } 
+} */
 
-@media only screen and (max-width: 1290px) {
+/* @media only screen and (max-width: 1290px) {
     #services{
         grid-template-columns: 43ch 40ch 10ch;
     }
-}
+} */
 
-@media only screen and (max-width: 1080px) {
+/* @media only screen and (max-width: 1080px) {
     .about-title{
     font-size: 6rem;
-    }
-    .about-container{
+    } 
+     .about-container{
     margin-left: auto;
     display: flex;
     justify-content: space-between;
@@ -416,7 +451,7 @@ h1{
     .about-text-styling{
     text-align: right;
     font-size: 1.1rem;
-    }
+    } 
     .front-card, .back-card-creativity{
     width: 15.625rem;
     height: 21.875rem;
@@ -426,8 +461,8 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(12.5rem, 2fr));
     padding: 3rem;
     height: 30.9rem;
-    }
- }
+    } 
+ } */
 
  @media (max-width: 880px) {
     .grid-container {
@@ -455,18 +490,32 @@ h1{
     .team-members {
         gap: 0px;
     }
+
+    .back-card-creativity {
+        transform: unset;
+        font-size: 0.6rem;
+    }
+
+    .hide {
+        display: inherit;
+        padding: unset;
+    }
+
+    .flip-container:hover .flip-motion{
+        transform: unset;
+    }
 }
 
-@media only screen and (max-width: 851px) {
+/* @media only screen and (max-width: 851px) {
     #services{
     padding: 0.7rem;
     }
     .front-card, .back-card-creativity{
     width: 13.625rem
     }
-}
+} */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .about-title{
     font-size: 4rem;
     }
@@ -479,7 +528,7 @@ h1{
     text-align: right;
     font-size: 1rem;
     margin-right: 3rem;
-   }
+   } 
    #services{
     padding: 0.625rem;
     display: grid;
@@ -493,9 +542,9 @@ h1{
     .detailed-info{
         font-size: 0.7rem;
     }
-}
+} */
 
-@media only screen and (max-width: 425px) {
+/* @media only screen and (max-width: 425px) {
     .about-container{
     margin-left: auto;
     display: grid;
@@ -503,16 +552,16 @@ h1{
     }
     .about-title{
     font-size: 3rem;
-    }
+    } 
     .about-text-styling{
     font-size: 1.2rem;
     text-align: center;
     margin-right: auto;
-    }
-    .image-description{
+    } 
+   .image-description{
     font-size: 2rem;
     padding: 1rem;
-    }
+    } 
     #services{
     padding: 6rem;
     height: 60rem;
@@ -525,8 +574,8 @@ h1{
     .detailed-info{
     font-size: 0.4rem;
     }
-}
-@media only screen and (max-width: 320px) {
+} */
+/* @media only screen and (max-width: 320px) {
     .about-container{
     margin-left: auto;
     display: grid;
@@ -541,7 +590,7 @@ h1{
     .image-description{
     font-size: 1rem;
     padding: 0.2rem;
-    }
+    } 
     #services{
     padding: 2.8rem;
     }
@@ -553,7 +602,7 @@ h1{
     .detailed-info{
     font-size: 0.4rem;
     }
-}
+} */
 
 #testimonial{
     margin: 0;
