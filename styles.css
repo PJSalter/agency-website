@@ -12,6 +12,9 @@
     outline: 3px dotted black;   
 }
 
+.hide {
+    display: none;
+}
 a {
     text-decoration: none;
 }
@@ -292,7 +295,7 @@ h2 {
       height: var(--flip-card-height);
       width: var(--flip-card-width);
       border-radius: 5%;
-      border: var(--secondary-color) solid 20px;
+      border: var(--secondary-color) solid 16px;
 }
 
 .front-card{
@@ -480,6 +483,16 @@ h2 {
 
     .team-members {
         gap: 0px;
+    }
+
+    .back-card-creativity {
+        transform: unset;
+        font-size: 0.6rem;
+    }
+
+    .hide {
+        display: inherit;
+        padding: unset;
     }
 }
 
