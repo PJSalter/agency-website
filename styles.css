@@ -185,10 +185,11 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    gap: 20px;
 }
 
 .about-container > div {
-    max-width: 20rem;
+    max-width: 25rem;
 }
 
 /* #about{
