@@ -118,7 +118,7 @@ h2 {
 #case-studies-grid {
     grid-area: casestudies;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
     color: var(--secondary-color);
     border: var(--secondary-color) 20px solid;
     text-orientation: mixed;
@@ -158,6 +158,10 @@ h2 {
     text-align: center;
     font-size: 3.5rem;
 }
+.grid-item:focus {
+    outline: 3px dotted var(--secondary-color);
+}
+
 .grid-item:hover {
     transition: transform 100ms ease-in-out;
     transform: translate(8px, 8px);
