@@ -583,6 +583,7 @@ h2, h3 {
 }
 .testim .cont div .img embed{
     display: block;
+    object-fit: cover;
     width: 100px;
     height: 100px;
     margin: auto;
