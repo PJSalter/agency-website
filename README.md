@@ -22,3 +22,5 @@ The potential clients wants to:
 - [x] A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address)
 - [x] Information from the form doesn’t get submitted until the user clicks a button
 
+## The initial plan
+![Untitled-2022-01-21-1223](https://user-images.githubusercontent.com/82713219/151401500-32296e0b-48e7-4f4a-86f6-3323adc67328.png)
