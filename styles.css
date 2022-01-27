@@ -131,7 +131,7 @@ h2 {
     justify-content: center;
     color: var(--secondary-color);
     border: var(--secondary-color) 20px solid;
-    text-orientation: mixed;
+    text-orientation: mixed; 
     writing-mode: sideways-lr;
 }
 
@@ -148,7 +148,7 @@ h2 {
     grid-area: services;
     color: var(--secondary-color);
     border: var(--secondary-color) solid 20px;
-    text-orientation: mixed;
+    text-orientation: mixed; 
     writing-mode: sideways-rl;
     display: flex;
     justify-content: center;
@@ -429,6 +429,9 @@ h2 {
 .footer-text {
     align-items: flex-end;
 }
+.names{
+    color: rgb(176, 139, 197);
+}
 .footer-sizing{
     max-width: 15rem;
     text-align: center;
@@ -438,7 +441,7 @@ h2 {
      display: block;
      margin-left: auto;
      margin-right: auto;
-     max-width: 20%;
+     max-width: 100%;
      height:auto;
 }
 i.fa-linkedin {
