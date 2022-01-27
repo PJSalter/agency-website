@@ -1,6 +1,6 @@
 # Agency Website
 
-Challenge: build an agency website for your team that includes
+Challenge for the next week: build an agency website for your team that includes:
 - an introduction to your agency
 - information about each member of your team
 - a way to get in touch if they are interested in working with you
@@ -12,12 +12,13 @@ The potential clients wants to:
 - [x] Click to navigate to different sections of the webpage
 - [x] Contact the agency to enquire about working with them
 - [x] Visit the website at a publicly accessible domain name
-- [x] Navigate the website using keyboard controls
-- [x] Hear the screen reader describe the content on the website
+- [ ] Navigate the website using keyboard controls
+- [ ] Hear the screen reader describe the content on the website 
 
 ## Acceptance Criteria
 - [x] Navigation menu
 - [x] 'About us’ section
 - [x] Contact form 
 - [x] A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address)
-- [ ] Information from the form doesn’t get submitted until the user clicks a button
+- [x] Information from the form doesn’t get submitted until the user clicks a button
+
