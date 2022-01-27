@@ -149,7 +149,7 @@ h2 {
     color: var(--secondary-color);
     border: var(--secondary-color) solid 20px;
     text-orientation: mixed;
-    writing-mode: vertical-lr;
+    writing-mode: sideways-rl;
     display: flex;
     justify-content: center;
     align-items: center;
