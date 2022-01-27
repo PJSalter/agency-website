@@ -133,6 +133,7 @@ h2 {
     border: var(--secondary-color) 20px solid;
     text-orientation: mixed; 
     writing-mode: sideways-lr;
+    font-size: 1.8rem;
 }
 
 #ved-grid {
@@ -153,6 +154,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.7rem;
 }
 
 #contact-grid {
