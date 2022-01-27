@@ -404,6 +404,20 @@ h2 {
     font-size: 1.6rem;
 }
 
+footer {
+    background-color: #e8e8e8;
+    height: 1rem;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 1.2rem;
+}
+
+.footer-text {
+    align-items: flex-end;
+}
+
 
 /* ------------------------------------------ Media Queries --------------------------------------------- */
 
