@@ -1,3 +1,12 @@
+/*---------- Table of contents
+1. Navigation menu 
+2. Hero Section
+3. About
+4. Services Section
+5. Contact Form
+6. Team Section
+7. Media Queries ----------------- */
+
 :root {
     --primary-color: #370140;
     --secondary-color: #bae1ff;
@@ -58,7 +67,7 @@ h2 {
     height: auto;
 }
 
-/* -------------------------------------- Navigation menu ---------------------------------------- */
+/* -------------------------------------- 1. Navigation menu ---------------------------------------- */
 
 .hamburger {
     position: fixed;
@@ -140,7 +149,7 @@ h2 {
     color: var(--secondary-color);
     border: var(--secondary-color) solid 20px;
     text-orientation: mixed;
-    writing-mode: vertical-lr;
+    writing-mode: sideways-rl;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +178,7 @@ h2 {
     box-shadow: 7px 7px 6px 2px #640e64;
 }
 
-/* ------------------------------------ hero section -------------------------------------- */
+/* ------------------------------------ 2. Hero section -------------------------------------- */
 
 .hero-section {
     background: url('img/background-img.jpg');
@@ -191,7 +200,7 @@ h2 {
     font-size: 3rem;
 }
 
-/* ------------------------------------ About Page --------------------------------------------- */
+/* ------------------------------------ 3. About  --------------------------------------------- */
 
 .about-container {
     display: flex;
@@ -242,7 +251,7 @@ h2 {
     color: var(--primary-color);
 }  */
 
-/* --------------------------------- Services Section --------------------------------------- */
+/* --------------------------------- 4. Services Section --------------------------------------- */
 
 #services{
     box-sizing: border-box; 
@@ -323,7 +332,7 @@ h2 {
     padding: 1rem;
 }
 
-/* ------------------------------------------ Contact Form --------------------------------------------- */
+/* ------------------------------------------ 5. Contact Form --------------------------------------------- */
 
 .form-control {
     display: flex;
@@ -363,7 +372,7 @@ h2 {
  }
 
 
-/* ------------------------------------------ Team Section --------------------------------------------- */
+/* ------------------------------------------ 6. Team Section --------------------------------------------- */
 
 .flex-container {
     display: flex;
@@ -404,8 +413,22 @@ h2 {
     font-size: 1.6rem;
 }
 
+footer {
+    background-color: #e8e8e8;
+    height: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 1.2rem;
+}
 
-/* ------------------------------------------ Media Queries --------------------------------------------- */
+.footer-text {
+    align-items: flex-end;
+}
+
+
+/* ------------------------------------------ 7. Media Queries --------------------------------------------- */
 
 /* @media only screen and (max-width: 1440px) {
     .about-container{
@@ -742,10 +765,10 @@ h2 {
     border-radius: 50%;
     border: 2px solid #370140;
 }
-.testim .cont div h2{
-    color:deeppink;
-    font-size: 1em;
+.testim .cont div h3{
+    font-size: 1.6em;
     margin: 15px 0;
+    font-weight: 900;
 }
 .testim .cont div p{
     font-size: 1.15em;
@@ -756,7 +779,7 @@ h2 {
 .testim .cont div.active .img embed{
     animation: testim-show .5s ease-in-out forwards;
 }
-.testim .cont div.active h2{
+.testim .cont div.active h3{
     animation: testim-content-in .4s ease-in-out forwards;
 }
 .testim .cont div.active p{
@@ -765,7 +788,7 @@ h2 {
 .testim .cont div.inactive .img embed{
     animation: testim-hide .5s ease-in-out forwards;
 }
-.testim .cont div.inactive h2{
+.testim .cont div.inactive h3{
     animation: testim-content-out .4s ease-in-out forwards;
 }
 .testim .cont div.inactive p{
