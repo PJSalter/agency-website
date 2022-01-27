@@ -413,11 +413,14 @@ h2 {
     font-size: 1.6rem;
 }
 
-footer {
-    background-color: #e8e8e8;
-    height: 1rem;
+.footer-container {
+   
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+   /* background-color: #e8e8e8; */
+    /*height: 1rem; */
     padding: 1rem;
-    display: flex;
+    /*display: flex; */
     align-items: center;
     font-size: 0.8rem;
     margin-top: 1.2rem;
@@ -426,6 +429,33 @@ footer {
 .footer-text {
     align-items: flex-end;
 }
+.footer-sizing{
+    max-width: 15rem;
+    text-align: center;
+    padding: 1rem;
+}
+.agency-logo{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 20%;
+     height:auto;
+}
+i.fa-linkedin {
+    content: 'f08c';
+  }
+  
+i.fa-twitter {
+    content: 'f099';
+  }
+  
+i.fa-facebook {
+    content: 'f09a';
+  }
+  
+i.fa-instagram {
+    content: 'f16d';
+  }
 
 
 /* ------------------------------------------ 7. Media Queries --------------------------------------------- */
