@@ -1,5 +1,7 @@
 # Agency Website
 
+### Designed and Developed by ![Sonia](https://github.com/sonianb) and ![Peter](https://github.com/PJSalter)
+
 Challenge for the next week: build an agency website for your team that includes:
 - an introduction to your agency
 - information about each member of your team
